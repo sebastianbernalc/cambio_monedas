@@ -101,7 +101,7 @@ class MainActivity : Activity() {
                 resultado=dec.format(valor1.toFloat()*21.00)
                 mainBinding.infoTextView2.text=getString(R.string.pesom)
             }
-            if (moneda11=="Dolar" && moneda22 == "Dolar"){
+            if (moneda11=="Dollar" && moneda22 == "Dollar"){
                 resultado = dec.format(valor1.toFloat()*1)
                 mainBinding.infoTextView2.text=getString(R.string.dolar)
             }
@@ -116,7 +116,7 @@ class MainActivity : Activity() {
                 mainBinding.infoTextView2.text=getString(R.string.euro)
             }
 
-            if (moneda11=="Colombian Pesos" && moneda22 == "Dolar"){
+            if (moneda11=="Colombian Pesos" && moneda22 == "Dollar"){
                 resultado = dec.format(valor1.toFloat()*0.00026)
                 mainBinding.infoTextView2.text=getString(R.string.dolar)
             }
@@ -130,7 +130,7 @@ class MainActivity : Activity() {
                 mainBinding.infoTextView2.text=getString(R.string.pesom)
             }
 
-            if (moneda11=="Mexican Pesos" && moneda22 == "Dolar"){
+            if (moneda11=="Mexican Pesos" && moneda22 == "Dollar"){
                 resultado = dec.format(valor1.toFloat()*0.051)
                 mainBinding.infoTextView2.text=getString(R.string.dolar)
             }
@@ -143,15 +143,15 @@ class MainActivity : Activity() {
                 mainBinding.infoTextView2.text=getString(R.string.peso)
             }
 
-            if (moneda11=="Dolar" && moneda22 == "Colombian Pesos"){
+            if (moneda11=="Dollar" && moneda22 == "Colombian Pesos"){
                 resultado = dec.format(valor1.toFloat()*3802.00)
                 mainBinding.infoTextView2.text=getString(R.string.peso)
             }
-            if(moneda11=="Dolar"&& moneda22=="Euro"){
+            if(moneda11=="Dollar"&& moneda22=="Euro"){
                 resultado=dec.format(valor1.toFloat()*0.94)
                 mainBinding.infoTextView2.text=getString(R.string.euro)
             }
-            if(moneda11=="Dolar"&&moneda22=="Mexican Pesos"){
+            if(moneda11=="Dollar"&&moneda22=="Mexican Pesos"){
                 resultado=dec.format(valor1.toFloat()*19.71)
                 mainBinding.infoTextView2.text=getString(R.string.pesom)
             }
@@ -161,7 +161,7 @@ class MainActivity : Activity() {
                 mainBinding.infoTextView2.text=getString(R.string.peso)
             }
 
-            if(moneda11=="Euro"&& moneda22=="Dolar"){
+            if(moneda11=="Euro"&& moneda22=="Dollar"){
                 resultado=dec.format(valor1.toFloat()*1.07)
                 mainBinding.infoTextView2.text=getString(R.string.dolar)
             }
