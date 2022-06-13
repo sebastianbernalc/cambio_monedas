@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">cambio_monedas</string>
+    <string name="titulo_text">Conversion De Moneda</string>
+    <string name="moneda_a_convertir">Moneda a convertir</string>
+    <string name="moneda_convertida">Moneda convertida</string>
+    <string name="convertir">Convertir</string>
+    <string name="peso">COP</string>
+    <string name="dolar">$</string>
+    <string name="euro">€</string>
+    <string name="pesom">MXN</string>
+
+
+
+    <string-array name="monedas">
+        <item>Pesos Colombianos</item>
+        <item>Pesos Mexicanos</item>
+        <item>Dolar</item>
+        <item>Euro</item>
+    </string-array>
+</resources>
