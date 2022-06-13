@@ -28,7 +28,7 @@ class MainActivity : Activity() {
             val moneda22 = moneda2.selectedItem.toString()
             val valor1 = mainBinding.valor1EditText.text.toString()
 
-            if (moneda11=="Pesos Colombianos" && moneda22 == "Pesos Colombianos"){
+            if (moneda11=="Pesos Colombianos"||moneda11=="Colombian Pesos" && moneda22 == "Pesos Colombianos"||moneda22 == "Colombian Pesos"){
                 resultado = dec.format(valor1.toFloat()*1)
                 mainBinding.infoTextView2.text=getString(R.string.peso)
             }
@@ -98,6 +98,74 @@ class MainActivity : Activity() {
                 mainBinding.infoTextView2.text=getString(R.string.dolar)
             }
             if(moneda11=="Euro"&&moneda22=="Pesos Mexicanos"){
+                resultado=dec.format(valor1.toFloat()*21.00)
+                mainBinding.infoTextView2.text=getString(R.string.pesom)
+            }
+            if (moneda11=="Dolar" && moneda22 == "Dolar"){
+                resultado = dec.format(valor1.toFloat()*1)
+                mainBinding.infoTextView2.text=getString(R.string.dolar)
+            }
+
+            if (moneda11=="Mexican Pesos" && moneda22 == "Mexican Pesos"){
+                resultado = dec.format(valor1.toFloat()*1)
+                mainBinding.infoTextView2.text=getString(R.string.pesom)
+            }
+
+            if (moneda11=="Euro" && moneda22 == "Euro"){
+                resultado = dec.format(valor1.toFloat()*1)
+                mainBinding.infoTextView2.text=getString(R.string.euro)
+            }
+
+            if (moneda11=="Colombian Pesos" && moneda22 == "Dolar"){
+                resultado = dec.format(valor1.toFloat()*0.00026)
+                mainBinding.infoTextView2.text=getString(R.string.dolar)
+            }
+
+            if(moneda11=="Colombian Pesos"&& moneda22=="Euro"){
+                resultado=dec.format(valor1.toFloat()*0.00025)
+                mainBinding.infoTextView2.text=getString(R.string.euro)
+            }
+            if(moneda11=="Colombian Pesos"&&moneda22=="Mexican Pesos"){
+                resultado= dec.format(valor1.toFloat()*0.0052)
+                mainBinding.infoTextView2.text=getString(R.string.pesom)
+            }
+
+            if (moneda11=="Mexican Pesos" && moneda22 == "Dolar"){
+                resultado = dec.format(valor1.toFloat()*0.051)
+                mainBinding.infoTextView2.text=getString(R.string.dolar)
+            }
+            if(moneda11=="Mexican Pesos"&& moneda22=="Euro"){
+                resultado=dec.format(valor1.toFloat()*0.048)
+                mainBinding.infoTextView2.text=getString(R.string.euro)
+            }
+            if(moneda11=="Mexican Pesos"&&moneda22=="Colombian Pesos"){
+                resultado=dec.format(valor1.toFloat()*192.91)
+                mainBinding.infoTextView2.text=getString(R.string.peso)
+            }
+
+            if (moneda11=="Dolar" && moneda22 == "Colombian Pesos"){
+                resultado = dec.format(valor1.toFloat()*3802.00)
+                mainBinding.infoTextView2.text=getString(R.string.peso)
+            }
+            if(moneda11=="Dolar"&& moneda22=="Euro"){
+                resultado=dec.format(valor1.toFloat()*0.94)
+                mainBinding.infoTextView2.text=getString(R.string.euro)
+            }
+            if(moneda11=="Dolar"&&moneda22=="Mexican Pesos"){
+                resultado=dec.format(valor1.toFloat()*19.71)
+                mainBinding.infoTextView2.text=getString(R.string.pesom)
+            }
+
+            if (moneda11=="Euro" && moneda22 == "Colombian Pesos"){
+                resultado = dec.format(valor1.toFloat()*4049.81)
+                mainBinding.infoTextView2.text=getString(R.string.peso)
+            }
+
+            if(moneda11=="Euro"&& moneda22=="Dolar"){
+                resultado=dec.format(valor1.toFloat()*1.07)
+                mainBinding.infoTextView2.text=getString(R.string.dolar)
+            }
+            if(moneda11=="Euro"&&moneda22=="Mexican Pesos"){
                 resultado=dec.format(valor1.toFloat()*21.00)
                 mainBinding.infoTextView2.text=getString(R.string.pesom)
             }

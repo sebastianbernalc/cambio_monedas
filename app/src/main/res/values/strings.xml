@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">cambio_monedas</string>
+    <string name="app_name">cambio monedas</string>
     <string name="titulo_text">Conversion De Moneda</string>
     <string name="moneda_a_convertir">Moneda a convertir</string>
     <string name="moneda_convertida">Moneda convertida</string>
